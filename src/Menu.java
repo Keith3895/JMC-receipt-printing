@@ -14,7 +14,12 @@ import javax.swing.JTextField;
 import javax.swing.UIManager;
 
 public class Menu extends excel{
- public static void menu(){
+ /**
+	 * 
+	 */
+	private static final long serialVersionUID = 1L;
+
+public static void menu(){
 	 try{
 			String cname=UIManager.getSystemLookAndFeelClassName();
 			UIManager.setLookAndFeel(cname);
@@ -68,8 +73,11 @@ public class Menu extends excel{
 				limit[1]=Integer.parseInt(data);
 				data =months.getText();
 				computeMonth(data);
-				path=pstr;
-				headerLabel.setText("Click on print button"); 
+//				path=pstr;
+//				if(path==null)
+//					headerLabel.setText("Choose a File");
+//				else
+					headerLabel.setText("Click on print button"); 
 //				limi.setVisible(false);
 //				controlPanel.setVisible(false);
 				try {

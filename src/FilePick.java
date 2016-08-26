@@ -5,6 +5,10 @@ import javax.swing.*;
 
 public class FilePick extends JFrame {
 
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = 1L;
 	static String pstr;
 	static FilePick sfc = new FilePick();
    public FilePick() {
